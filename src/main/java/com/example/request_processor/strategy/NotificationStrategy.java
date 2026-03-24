@@ -1,9 +1,7 @@
-package strategy;
+package com.example.request_processor.strategy;
 
 
-import dto.NotificationRequest;
-
-import java.util.UUID;
+import com.example.request_processor.dto.NotificationRequest;
 
 public interface NotificationStrategy {
     void process(NotificationRequest request);

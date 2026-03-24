@@ -1,13 +1,11 @@
-package strategy;
+package com.example.request_processor.strategy;
 
-import dto.NotificationRequest;
+import com.example.request_processor.dto.NotificationRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dto.NotificationRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import outbox.TransactionalOutboxService;
-import strategy.NotificationStrategy;
+import com.example.request_processor.outbox.TransactionalOutboxService;
 
 import java.util.UUID;
 

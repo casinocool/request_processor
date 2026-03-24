@@ -1,14 +1,13 @@
-package com.example.notifications.outbox;
+package com.example.request_processor.outbox;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import model.NotificationOutbox;
+import com.example.request_processor.model.NotificationOutbox;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import outbox.OutboxRepository;
 
 import java.util.List;
 
