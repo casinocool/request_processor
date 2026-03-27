@@ -1,11 +1,12 @@
-package outbox;
+package com.example.request_processor.outbox;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import model.NotificationOutbox;
+import com.example.request_processor.model.NotificationOutbox;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Service
@@ -22,6 +23,7 @@ public class TransactionalOutboxService {
                 .key(key)
                 .value(value)
                 .sent(false)
+                .attempt(1)
                 .build();
         outboxRepository.save(outbox);
         log.info("Подготовлено сообщение для отправки. Key: {}, Payload: {}, topic: {}", key, value, topic);

@@ -1,6 +1,6 @@
-package strategy;
+package com.example.request_processor.strategy;
 
-import enums.KafkaTopics;
+import com.example.request_processor.enums.KafkaTopics;
 import org.springframework.stereotype.Component;
 import java.util.EnumMap;
 import java.util.Map;

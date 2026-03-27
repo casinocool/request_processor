@@ -1,7 +1,7 @@
-package outbox;
+package com.example.request_processor.outbox;
 
 import jakarta.transaction.Transactional;
-import model.NotificationOutbox;
+import com.example.request_processor.model.NotificationOutbox;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

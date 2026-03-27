@@ -1,11 +1,10 @@
-package controller;
+package com.example.request_processor.controller;
 
-import dto.NotificationRequest;
+import com.example.request_processor.dto.NotificationRequest;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
-import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -14,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import strategy.NotificationStrategyFactory;
+import com.example.request_processor.strategy.NotificationStrategyFactory;
 
 @RestController
 @RequestMapping("/api/v1/notifications")

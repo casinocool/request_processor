@@ -1,5 +1,5 @@
-package dto;
-import enums.KafkaTopics;
+package com.example.request_processor.dto;
+import com.example.request_processor.enums.KafkaTopics;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
