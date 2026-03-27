@@ -23,6 +23,8 @@ public class OutboxScheduler {
     private int batchSize;
 
     @Scheduled(fixedDelayString = "${outbox.delay-ms:1000}")
+
+
     @Transactional
     public void processOutbox() {
         List<NotificationOutbox> messages = outboxRepository.findBySentFalseOrderByCreatedAtAsc()
